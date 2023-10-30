@@ -1,8 +1,8 @@
 import React from 'react'
-import about from '../../assets/aboutus.png'
-import icon from '../../assets/icon1.png'
-import 'aos/dist/aos.css'
+import about from 'src/assets/aboutus.png'
+import icon from 'src/assets/icon1.png'
 
+import arrow from 'src/assets/icons/arrow1.svg'
 export default function AboutUs() {
   return (
     <section className='bg-black text-white flex flex-col gap-y-20 px-10 justify-center tablet:gap-x-20 py-20 tablet:px-20 tablet:flex-row '>
@@ -37,7 +37,9 @@ export default function AboutUs() {
         </div>
 
         <div className='pt-3'>
-          <button>conatct Us</button>
+          <button className='primary-button flex gap-x-1   '>
+            <p className='p-1'>conatct Us</p> <img src={arrow} alt='icon' />
+          </button>
         </div>
       </div>
     </section>

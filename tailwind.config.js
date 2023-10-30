@@ -3,6 +3,13 @@ module.exports = {
   content: ['./src/**/*.{html,js,jsx}'],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 15s linear infinite'
+      },
+      fontFamily: {
+        nohemi: ['Nohemi', 'sans-serif'],
+        usual: ['usual', 'sans-serif']
+      },
       colors: {
         background: '#fffff'
       },

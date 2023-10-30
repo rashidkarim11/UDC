@@ -2,6 +2,7 @@ import React from 'react'
 import about from '../../assets/aboutus.png'
 import icon from '../../assets/icon1.png'
 import 'aos/dist/aos.css'
+
 export default function AboutUs() {
   return (
     <section className='bg-black text-white flex flex-col gap-y-20 px-10 justify-center tablet:gap-x-20 py-20 tablet:px-20 tablet:flex-row '>

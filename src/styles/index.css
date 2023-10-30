@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply font-nohemi;
+}
+
 body {
   @apply bg-background text-black;
+}
+
+.main-bg {
+  background-image: url('../assets/images/main-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

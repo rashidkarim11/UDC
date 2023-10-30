@@ -7,6 +7,10 @@ module.exports = {
         background: '#fffff'
       },
 
+      fontFamily: {
+        custom: ['Cabin', 'sans']
+      },
+
       screens: {
         tablet: '876px',
         xs: '475px'

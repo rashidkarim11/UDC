@@ -1,0 +1,81 @@
+/* Nohemi Black */
+@font-face {
+  font-family: 'Nohemi';
+  font-weight: 900;
+  src: url('./fonts/nohemi/Nohemi-Black.otf') format('opentype'), url('./fonts/nohemi/Nohemi-Black.woff') format('woff'),
+    url('./fonts/nohemi/Nohemi-Black.ttf') format('truetype');
+}
+
+/* Nohemi ExtraBold */
+@font-face {
+  font-family: 'Nohemi';
+  font-weight: 800;
+  src: url('./fonts/nohemi/Nohemi-ExtraBold.otf') format('opentype'),
+    url('./fonts/nohemi/Nohemi-ExtraBold.woff') format('woff'),
+    url('./fonts/nohemi/Nohemi-ExtraBold.ttf') format('truetype');
+}
+
+/* Nohemi Bold */
+@font-face {
+  font-family: 'Nohemi';
+  font-weight: 700;
+  src: url('./fonts/nohemi/Nohemi-Bold.otf') format('opentype'), url('./fonts/nohemi/Nohemi-Bold.woff') format('woff'),
+    url('./fonts/nohemi/Nohemi-Bold.ttf') format('truetype');
+}
+
+/* Nohemi Medium */
+@font-face {
+  font-family: 'Nohemi';
+  font-weight: 500;
+  src: url('./fonts/nohemi/Nohemi-Medium.otf') format('opentype'),
+    url('./fonts/nohemi/Nohemi-Medium.woff') format('woff'), url('./fonts/nohemi/Nohemi-Medium.ttf') format('truetype');
+}
+
+/* Nohemi Light */
+@font-face {
+  font-family: 'Nohemi';
+  font-weight: 300;
+  src: url('./fonts/nohemi/Nohemi-Light.otf') format('opentype'), url('./fonts/nohemi/Nohemi-Light.woff') format('woff'),
+    url('./fonts/nohemi/Nohemi-Light.ttf') format('truetype');
+}
+
+/* Nohemi ExtraLight */
+@font-face {
+  font-family: 'Nohemi';
+  font-weight: 200;
+  src: url('./fonts/nohemi/Nohemi-ExtraLight.otf') format('opentype'),
+    url('./fonts/nohemi/Nohemi-ExtraLight.woff') format('woff'),
+    url('./fonts/nohemi/Nohemi-ExtraLight.ttf') format('truetype');
+}
+
+/***********************************************************************/
+/******************** USUAL FONT FAMILY ********************************/
+/***********************************************************************/
+
+@font-face {
+  font-family: 'usual';
+  font-weight: 800;
+  src: url('./fonts/usual/ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'usual';
+  font-weight: 700;
+  src: url('./fonts/usual/Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'usual';
+  font-weight: 500;
+  src: url('./fonts/usual/Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'usual';
+  font-weight: 400;
+  src: url('./fonts/usual/Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'usual';
+  font-weight: 300;
+  src: url('./fonts/usual/Light.otf') format('opentype');
+}

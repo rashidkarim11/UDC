@@ -1,15 +1,26 @@
 import React from 'react'
 import Marquee from '../marquee'
+import footer from '../../assets/images/footer.png'
 
 const Footer = () => {
   return (
     <>
       <div className='w-full h-[520px] bg-black'>
-        <div className='p-12'>
-          <p className='text-white text-3xl text-center font-bold tablet:text-7xl'>Let’s work together </p>
+        <div className='pt-[100px]'>
+          <p className='text-white text-4xl text-center font-bold tablet:text-7xl'>Let’s work together </p>
         </div>
-        <div className='image'>
-          <Marquee />
+        <div className='relative h-[280px]'>
+          <div className='absolute inset-0 top-10 flex items-center justify-center z-50'>
+            {' '}
+            <div className='w-[180px] h-[180px]'>
+              <img src={footer} alt='img' width='100%' height='100%' />
+            </div>
+          </div>
+
+          <div className='absolute flex items-center w-full inset-0 top-10'>
+            {' '}
+            <Marquee />
+          </div>
         </div>
       </div>
       <div className='w-full flex justify-between flex-wrap gap-2 px-6 py-6'>

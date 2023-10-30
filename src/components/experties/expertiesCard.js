@@ -44,12 +44,12 @@ const ExpertiesCard = ({ defaultIcon, hoverIcon, heading, description }) => {
           <img src={arrow} alt='Hover Icon' className='hover-icon' />
         </div>
       </div>
-      <div className='mt-5'>
+      <div className='mt-5' data-aos='fade-right' data-aos-duration='300' data-aos-offset='0 '>
         <h1 className='text-3xl font-bold' style={headingStyle}>
           {heading}
         </h1>
       </div>
-      <div className='mt-3  '>
+      <div className='mt-3' data-aos='fade-right' data-aos-duration='300' data-aos-offset='0 '>
         <p className='text-[18px]' style={descriptionStyle}>
           {description}
         </p>

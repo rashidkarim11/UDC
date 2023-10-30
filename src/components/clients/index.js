@@ -31,7 +31,7 @@ const data = [
 const ClientsSec = () => {
   const [selectedClient, setSelectedClient] = useState(0)
   return (
-    <div class='max-w-7xl m-auto px-4 py-10'>
+    <div class='max-w-7xl m-auto px-4 py-[100px]'>
       <div class='flex items-center'>
         <svg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path

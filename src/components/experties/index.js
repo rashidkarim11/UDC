@@ -9,7 +9,7 @@ import vector from 'src/assets/icons/Vector.svg'
 
 const ExpertiesSection = () => {
   return (
-    <section className='max-w-7xl px-4 py-10 m-auto'>
+    <section className='max-w-7xl px-4 py-10 m-auto' data-aos='fade-right' data-aos-duration='300' data-aos-offset='0 '>
       <div className='flex items-center'>
         <div>
           <img src={vector} alt='Hover Icon' className='hover-icon' />

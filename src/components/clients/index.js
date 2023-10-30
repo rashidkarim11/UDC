@@ -46,8 +46,8 @@ const ClientsSec = () => {
         We deliver impactful, lasting results that exceed all expectations
       </div>
 
-      <div class='grid md:grid-cols-3 sm:grid-cols-1 max-h-[60vh] min-h-[60vh]'>
-        <div class='sm:col-span-2  flex justify-between'>
+      <div class='grid grid-cols-3  min-h-[60vh]'>
+        <div class='md:col-span-2  col-span-3 flex justify-between'>
           <div class='flex flex-col justify-between'>
             <div class='relative '>
               <div class='px-3 z-10 max-w-sm font-usual text-xl font-semibold leading-34 tracking-tighter text-left mt-10'>
@@ -94,7 +94,7 @@ const ClientsSec = () => {
             <img src={data[selectedClient]?.image} alt='man' class='max-h-[60vh] min-h-[60vh] min-w-full' />
           </div>
         </div>
-        <div class='sm:col-span-1 sm:mt-10 md:mt-0'>
+        <div class='md:col-span-1 md:mt-0 col-span-3 mt-10 '>
           <Crosule data={data} setSelectedClient={setSelectedClient} />
         </div>
       </div>

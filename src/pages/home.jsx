@@ -12,9 +12,6 @@ export default function HomePage(props) {
       <Header />
       <Main />
       <ExpertiesSection />
-      <Header />
-      <Main />
-      <ExpertiesSection />
       <AboutUs />
       <Footer />
     </GuardWrapper>

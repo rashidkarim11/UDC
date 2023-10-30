@@ -5,7 +5,7 @@ import icon from 'src/assets/icon1.png'
 import arrow from 'src/assets/icons/arrow1.svg'
 export default function AboutUs() {
   return (
-    <section className='bg-black text-white flex flex-col gap-y-20 px-10 justify-center tablet:gap-x-20 py-20 tablet:px-20 tablet:flex-row '>
+    <section className='bg-alpha text-white flex flex-col gap-y-20 px-10 justify-center tablet:gap-x-20 py-20 tablet:px-20 tablet:flex-row '>
       <div data-aos='fade-right' data-aos-duration='300' data-aos-offset='0 '>
         <img className='tablet:h-[600px] tablet:w-[500px]' src={about} alt='aboutus' />
       </div>

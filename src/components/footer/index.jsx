@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 const Footer = () => {
   return (
     <>
-      <div className='w-full h-[520px] bg-black'>
+      <div className='w-full h-[520px] bg-alpha'>
         <div className='pt-[100px]' data-aos='fade-down' data-aos-duration='800' data-aos-offset='0 '>
           <p className='text-white text-4xl text-center font-bold tablet:text-7xl font-usual'>Let’s work together </p>
         </div>

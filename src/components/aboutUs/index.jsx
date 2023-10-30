@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import about from './aboutus.png'
 import icon from './icon1.png'
 import 'aos/dist/aos.css'

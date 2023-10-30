@@ -47,7 +47,7 @@ const ClientsSec = () => {
       </div>
 
       <div class='grid md:grid-cols-3 sm:grid-cols-1 max-h-[60vh] min-h-[60vh]'>
-        <div class='sm:col-span-1  flex justify-between'>
+        <div class='sm:col-span-2  flex justify-between'>
           <div class='flex flex-col justify-between'>
             <div class='relative '>
               <div class='px-3 z-10 max-w-sm font-usual text-xl font-semibold leading-34 tracking-tighter text-left mt-10'>

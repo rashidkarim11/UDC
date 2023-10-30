@@ -1,3 +1,4 @@
+import ClientsSec from 'src/components/clients'
 import { Header } from 'src/components/header'
 import { Main } from 'src/components/main'
 import { GuardWrapper } from 'src/layouts/guardWrapper'
@@ -12,7 +13,9 @@ export default function HomePage(props) {
       <Header />
       <Main />
       <ExpertiesSection />
+
       <AboutUs />
+      <ClientsSec />
     </GuardWrapper>
   )
 }

@@ -8,7 +8,7 @@ const Footer = () => {
     <>
       <div className='w-full h-[520px] bg-black'>
         <div className='pt-[100px]' data-aos='fade-down' data-aos-duration='800' data-aos-offset='0 '>
-          <p className='text-white text-4xl text-center font-bold tablet:text-7xl'>Let’s work together </p>
+          <p className='text-white text-4xl text-center font-bold tablet:text-7xl font-usual'>Let’s work together </p>
         </div>
         <div className='relative h-[280px]' data-aos='fade-down' data-aos-duration='800' data-aos-offset='0 '>
           <div className='absolute inset-0 top-10 flex items-center justify-center z-50'>
@@ -42,9 +42,9 @@ const Footer = () => {
               </clipPath>
             </defs>
           </svg>
-          Back Top
+          <p className='font-usual'>Back Top</p>
         </div>
-        <div>All rights reserved by UDS Studio</div>
+        <div className='font-usual'>All rights reserved by UDS Studio</div>
         <div className='flex gap-5'>
           <svg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'>
             <path

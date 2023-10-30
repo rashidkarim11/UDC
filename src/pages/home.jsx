@@ -1,11 +1,18 @@
+import { Header } from 'src/components/header'
+import { Main } from 'src/components/main'
+import { GuardWrapper } from 'src/layouts/guardWrapper'
+
+// ** Components Imports
+import ExpertiesSection from 'src/components/experties'
 import AboutUs from 'src/components/aboutUs'
 import Footer from 'src/components/footer'
-import { GuardWrapper } from 'src/layouts/guardWrapper'
 
 export default function HomePage(props) {
   return (
     <GuardWrapper {...props}>
-      <h1>Home Page</h1>
+      <Header />
+      <Main />
+      <ExpertiesSection />
       <AboutUs />
       <Footer />
     </GuardWrapper>

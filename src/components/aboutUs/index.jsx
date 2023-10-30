@@ -1,6 +1,6 @@
 import React from 'react'
-import about from './aboutus.png'
-import icon from './icon1.png'
+import about from '../../assets/aboutus.png'
+import icon from '../../assets/icon1.png'
 import 'aos/dist/aos.css'
 export default function AboutUs() {
   return (

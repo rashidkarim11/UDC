@@ -31,7 +31,7 @@ const data = [
 const ClientsSec = () => {
   const [selectedClient, setSelectedClient] = useState(0)
   return (
-    <div>
+    <div class='max-w-7xl m-auto px-4 py-10'>
       <div class='flex items-center'>
         <svg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -39,20 +39,18 @@ const ClientsSec = () => {
             fill='#4D4C4C'
           />
         </svg>
-        <div class='ml-2  font-Usual text-base font-normal leading-26 tracking-tighter text-left'>
-          What Our Clients Say
-        </div>
+        <div class='ml-2   text-base font-normal leading-26 tracking-tighter text-left'>What Our Clients Say</div>
       </div>
 
-      <div class='max-w-xl my-3 font-Cabin text-4xl font-extrabold leading-72 tracking-tight text-left'>
+      <div class='max-w-xl my-3  text-4xl font-extrabold leading-72 tracking-tight text-left'>
         We deliver impactful, lasting results that exceed all expectations
       </div>
 
       <div class='grid md:grid-cols-3 sm:grid-cols-1 max-h-[60vh] min-h-[60vh]'>
-        <div class='sm:col-span-2  flex justify-between'>
+        <div class='sm:col-span-1  flex justify-between'>
           <div class='flex flex-col justify-between'>
             <div class='relative '>
-              <div class='px-3 z-10 max-w-sm font-Usual text-xl font-semibold leading-34 tracking-tighter text-left mt-10'>
+              <div class='px-3 z-10 max-w-sm font-usual text-xl font-semibold leading-34 tracking-tighter text-left mt-10'>
                 {data[selectedClient]?.quote}
               </div>
 
@@ -86,8 +84,10 @@ const ClientsSec = () => {
               </div>
             </div>
             <div>
-              <h4 class='text-base font-semibold leading-5 tracking-tighter text-left'>{data[selectedClient]?.name}</h4>
-              <p class=' text-base font-normal leading-4'> {data[selectedClient]?.compnay}</p>
+              <h4 class='text-base font-semibold font-usual leading-5 tracking-tighter text-left'>
+                {data[selectedClient]?.name}
+              </h4>
+              <p class=' text-base font-normal font-usual leading-4'> {data[selectedClient]?.compnay}</p>
             </div>
           </div>
           <div>

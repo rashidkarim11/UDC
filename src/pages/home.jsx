@@ -10,11 +10,12 @@ import AboutUs from 'src/components/aboutUs'
 export default function HomePage(props) {
   return (
     <GuardWrapper {...props}>
-      <ClientsSec />
       <Header />
       <Main />
       <ExpertiesSection />
+
       <AboutUs />
+      <ClientsSec />
     </GuardWrapper>
   )
 }

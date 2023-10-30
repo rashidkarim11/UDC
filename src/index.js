@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals'
 import 'src/styles/fonts.css'
 import 'src/styles/index.css'
 import 'src/iconify-bundle/icons-bundle-react'
+import 'aos/dist/aos.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

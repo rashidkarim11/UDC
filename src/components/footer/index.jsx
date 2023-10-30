@@ -1,15 +1,16 @@
 import React from 'react'
-import Marquee from '../marquee'
-import footer from '../../assets/images/footer.png'
+import Marquee from 'src/components/marquee'
+import footer from 'src/assets/images/footer.png'
+import 'aos/dist/aos.css'
 
 const Footer = () => {
   return (
     <>
       <div className='w-full h-[520px] bg-black'>
-        <div className='pt-[100px]'>
+        <div className='pt-[100px]' data-aos='fade-down' data-aos-duration='800' data-aos-offset='0 '>
           <p className='text-white text-4xl text-center font-bold tablet:text-7xl'>Let’s work together </p>
         </div>
-        <div className='relative h-[280px]'>
+        <div className='relative h-[280px]' data-aos='fade-down' data-aos-duration='800' data-aos-offset='0 '>
           <div className='absolute inset-0 top-10 flex items-center justify-center z-50'>
             {' '}
             <div className='w-[180px] h-[180px]'>
@@ -23,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='w-full flex justify-between flex-wrap gap-2 px-6 py-6'>
+      <div className='w-full flex justify-between flex-wrap gap-2 px-6 py-4'>
         <div className='flex items-baseline'>
           <svg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 16 15' fill='none'>
             <g clip-path='url(#clip0_631_6017)'>

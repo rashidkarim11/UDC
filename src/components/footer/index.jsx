@@ -2,110 +2,42 @@ import React from 'react'
 import Marquee from 'src/components/marquee'
 import footer from 'src/assets/images/footer.png'
 import 'aos/dist/aos.css'
+import { ArrowIcon, FacebookIcon, InstagramIcon, Twitter, TwitterIcon } from 'src/icons'
 
 const Footer = () => {
   return (
     <>
-      <div className='w-full h-[520px] bg-alpha'>
+      <div className='w-full min-h-[520px] bg-alpha py-10'>
         <div className='pt-[100px]' data-aos='fade-down' data-aos-duration='800' data-aos-offset='0 '>
           <p className='text-white text-4xl text-center font-bold tablet:text-7xl font-usual'>Let’s work together </p>
         </div>
-        <div className='relative h-[280px]' data-aos='fade-down' data-aos-duration='800' data-aos-offset='0 '>
-          <div className='absolute inset-0 top-10 flex items-center justify-center z-50'>
-            {' '}
-            <div className='w-[180px] h-[180px]'>
-              <img src={footer} alt='img' width='100%' height='100%' />
+        <div className='relative min-h-[280px]' data-aos='fade-down' data-aos-duration='800' data-aos-offset='0 '>
+          <div className='w-full mb-10'>
+            <div className='bg-gradient-to-b from-cdark-normal to-cdark-light rounded mt-20 overflow-hidden'>
+              <div className='h-28 md:px-5 px-1 relative flex'>
+                <Marquee className='animate-move-top top-[25px]' />
+                <Marquee className='animate-move-bottom top-[25px]' />
+              </div>
             </div>
           </div>
 
-          <div className='absolute flex items-center w-full inset-0 top-10'>
-            {' '}
-            <Marquee />
+          <div className='absolute top-[-50%] inset-0 flex items-center justify-center z-50'>
+            <div className='w-[180px] h-[180px]'>
+              <img src={footer} alt='img' width='100%' height='100%' />
+            </div>
           </div>
         </div>
       </div>
       <div className='w-full flex justify-between flex-wrap gap-2 px-6 py-4'>
         <div className='flex items-baseline'>
-          <svg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 16 15' fill='none'>
-            <g clip-path='url(#clip0_631_6017)'>
-              <path
-                d='M11.75 9.375L8 5.625L4.25 9.375'
-                stroke='#181717'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'
-              />
-            </g>
-            <defs>
-              <clipPath id='clip0_631_6017'>
-                <rect width='15' height='15' fill='white' transform='matrix(-1 8.74228e-08 8.74228e-08 1 15.5 0)' />
-              </clipPath>
-            </defs>
-          </svg>
+          <ArrowIcon />
           <p className='font-usual'>Back Top</p>
         </div>
         <div className='font-usual'>All rights reserved by UDS Studio</div>
-        <div className='flex gap-5'>
-          <svg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'>
-            <path
-              d='M24.5 12C24.5 5.37258 19.1274 0 12.5 0C5.87258 0 0.5 5.37258 0.5 12C0.5 17.9896 4.88823 22.954 10.625 23.8542V15.4688H7.57812V12H10.625V9.35625C10.625 6.34875 12.4165 4.6875 15.1576 4.6875C16.4705 4.6875 17.8438 4.92188 17.8438 4.92188V7.875H16.3306C14.8399 7.875 14.375 8.8 14.375 9.749V12H17.7031L17.1711 15.4688H14.375V23.8542C20.1118 22.954 24.5 17.9896 24.5 12Z'
-              fill='white'
-            />
-            <path
-              d='M17.1711 15.4688L17.7031 12H14.375V9.749C14.375 8.8 14.8399 7.875 16.3306 7.875H17.8438V4.92188C17.8438 4.92188 16.4705 4.6875 15.1576 4.6875C12.4165 4.6875 10.625 6.34875 10.625 9.35625V12H7.57812V15.4688H10.625V23.8542C11.8674 24.0486 13.1326 24.0486 14.375 23.8542V15.4688H17.1711Z'
-              fill='#0C0C0C'
-            />
-          </svg>
-          <svg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'>
-            <path
-              d='M12.5 24C19.1274 24 24.5 18.6274 24.5 12C24.5 5.37258 19.1274 0 12.5 0C5.87258 0 0.5 5.37258 0.5 12C0.5 18.6274 5.87258 24 12.5 24Z'
-              fill='white'
-            />
-            <path
-              d='M20.1941 7.22761C19.6281 7.47878 19.0201 7.64857 18.3809 7.72489C19.0333 7.33425 19.5331 6.71522 19.769 5.97847C19.1493 6.34653 18.4711 6.60564 17.7639 6.74456C17.1884 6.13107 16.3676 5.74805 15.4596 5.74805C13.7168 5.74805 12.3033 7.16095 12.3033 8.90484C12.3033 9.15193 12.3311 9.39299 12.3846 9.62443C9.76095 9.49258 7.43491 8.23582 5.87796 6.32617C5.6061 6.79256 5.45049 7.33482 5.45049 7.91338C5.45049 9.00846 6.00786 9.97466 6.85479 10.5406C6.35342 10.5251 5.86306 10.3898 5.42469 10.146V10.1858C5.42469 11.7155 6.51268 12.991 7.95692 13.281C7.69161 13.3537 7.41319 13.3917 7.12515 13.3917C6.92149 13.3917 6.72391 13.3724 6.53089 13.3361C6.93262 14.5899 8.09847 15.5025 9.47947 15.5283C8.39906 16.3752 7.0377 16.8801 5.55912 16.8801C5.30445 16.8801 5.05275 16.8649 4.80566 16.8351C6.20292 17.731 7.86193 18.254 9.64474 18.254C15.451 18.254 18.6265 13.4438 18.6265 9.27226C18.6265 9.13531 18.6235 8.99937 18.6169 8.86393C19.2356 8.41643 19.7697 7.86234 20.1941 7.22761Z'
-              fill='#0C0C0C'
-            />
-          </svg>
-          <svg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'>
-            <mask
-              id='mask0_631_6007'
-              // style='mask-type:luminance'
-              maskUnits='userSpaceOnUse'
-              x='0'
-              y='0'
-              width='25'
-              height='24'
-            >
-              <path
-                d='M12.5 24C19.1274 24 24.5 18.6274 24.5 12C24.5 5.37258 19.1274 0 12.5 0C5.87258 0 0.5 5.37258 0.5 12C0.5 18.6274 5.87258 24 12.5 24Z'
-                fill='white'
-              />
-            </mask>
-            <g mask='url(#mask0_631_6007)'>
-              <path
-                d='M5.65625 48.5625C19.8948 48.5625 31.4375 37.0198 31.4375 22.7812C31.4375 8.54266 19.8948 -3 5.65625 -3C-8.58234 -3 -20.125 8.54266 -20.125 22.7812C-20.125 37.0198 -8.58234 48.5625 5.65625 48.5625Z'
-                fill='white'
-              />
-            </g>
-            <path
-              d='M16.7625 8.625C16.7625 9.11515 16.3652 9.5125 15.875 9.5125C15.3848 9.5125 14.9875 9.11515 14.9875 8.625C14.9875 8.13485 15.3848 7.7375 15.875 7.7375C16.3652 7.7375 16.7625 8.13485 16.7625 8.625Z'
-              fill='#0C0C0C'
-              stroke='#181717'
-              stroke-width='0.1'
-            />
-            <path
-              d='M10.8611 9.54716C11.3462 9.22301 11.9165 9.05 12.5 9.05C13.2824 9.05 14.0327 9.3608 14.586 9.91403C15.1392 10.4673 15.45 11.2176 15.45 12C15.45 12.5835 15.277 13.1538 14.9528 13.6389C14.6287 14.1241 14.168 14.5022 13.6289 14.7254C13.0899 14.9487 12.4967 15.0071 11.9245 14.8933C11.3522 14.7795 10.8266 14.4985 10.414 14.086C10.0015 13.6734 9.72051 13.1478 9.60668 12.5755C9.49286 12.0033 9.55128 11.4101 9.77456 10.8711C9.99784 10.332 10.3759 9.87132 10.8611 9.54716ZM11.6389 13.2888C11.8938 13.4591 12.1934 13.55 12.5 13.55C12.9111 13.55 13.3053 13.3867 13.596 13.096C13.8867 12.8053 14.05 12.4111 14.05 12C14.05 11.6934 13.9591 11.3938 13.7888 11.1389C13.6185 10.884 13.3764 10.6853 13.0932 10.568C12.8099 10.4507 12.4983 10.42 12.1976 10.4798C11.8969 10.5396 11.6208 10.6872 11.404 10.904C11.1872 11.1208 11.0396 11.3969 10.9798 11.6976C10.92 11.9983 10.9507 12.3099 11.068 12.5932C11.1853 12.8764 11.384 13.1185 11.6389 13.2888Z'
-              fill='#0C0C0C'
-              stroke='#181717'
-              stroke-width='0.1'
-            />
-            <path
-              d='M16.25 6H8.75C7.50736 6 6.5 7.00736 6.5 8.25V15.75C6.5 16.9926 7.50736 18 8.75 18H16.25C17.4926 18 18.5 16.9926 18.5 15.75V8.25C18.5 7.00736 17.4926 6 16.25 6Z'
-              stroke='#181717'
-              stroke-width='1.5'
-              stroke-miterlimit='10'
-            />
-          </svg>
+        <div className='flex gap-5 items-center'>
+          <FacebookIcon />
+          <TwitterIcon />
+          <InstagramIcon />
         </div>
       </div>
     </>

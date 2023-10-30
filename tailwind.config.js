@@ -3,6 +3,12 @@ module.exports = {
   content: ['./src/**/*.{html,js,jsx}'],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 15s linear infinite',
+        'move-top': 'move-top 20s normal linear infinite',
+        'move-bottom': 'move-bottom 20s linear infinite'
+      },
+
       fontFamily: {
         nohemi: ['Nohemi', 'sans-serif'],
         usual: ['usual', 'sans-serif']
@@ -11,14 +17,23 @@ module.exports = {
         background: '#fffff',
         alpha: '#181717'
       },
-      animation: {
-        'spin-slow': 'spin 15s linear infinite',
-        marquee: 'marquee 20s linear infinite'
-      },
+
       keyframes: {
-        marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' }
+        'move-top': {
+          '0%': {
+            transform: 'translate(0, 0)'
+          },
+          '100%': {
+            transform: 'translate(-100%, 0)'
+          }
+        },
+        'move-bottom': {
+          '0%': {
+            transform: 'translate(100%, 0)'
+          },
+          '100%': {
+            transform: 'translate(0, 0)'
+          }
         }
       },
 

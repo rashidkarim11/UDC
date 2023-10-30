@@ -3,7 +3,12 @@ import { MenuIcon } from 'src/icons'
 
 export const Header = () => {
   return (
-    <header className='max-w-7xl m-auto relative bg-transparent z-10'>
+    <header
+      className='max-w-7xl m-auto relative bg-transparent z-10'
+      data-aos='fade-down'
+      data-aos-duration='800'
+      data-aos-offset='0 '
+    >
       <div className='absolute left-0 right-0'>
         <div className='pt-6 px-4'>
           <div className='flex justify-between items-center'>

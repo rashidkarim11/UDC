@@ -39,10 +39,22 @@ const ClientsSec = () => {
             fill='#4D4C4C'
           />
         </svg>
-        <div class='ml-2   text-base font-normal leading-26 tracking-tighter text-left'>What Our Clients Say</div>
+        <div
+          class='ml-2   text-base font-normal leading-26 tracking-tighter text-left'
+          data-aos='fade-right'
+          data-aos-duration='800'
+          data-aos-offset='0 '
+        >
+          What Our Clients Say
+        </div>
       </div>
 
-      <div class='max-w-xl my-3  text-4xl font-extrabold leading-72 tracking-tight text-left'>
+      <div
+        class='max-w-xl my-3  text-4xl font-extrabold leading-72 tracking-tight text-left'
+        data-aos='fade-right'
+        data-aos-duration='800'
+        data-aos-offset='100 '
+      >
         We deliver impactful, lasting results that exceed all expectations
       </div>
 

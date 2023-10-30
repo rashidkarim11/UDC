@@ -9,8 +9,8 @@ import vector from 'src/assets/icons/Vector.svg'
 
 const ExpertiesSection = () => {
   return (
-    <section className='max-w-7xl px-4 py-10 m-auto' data-aos='fade-right' data-aos-duration='300' data-aos-offset='0 '>
-      <div className='flex items-center'>
+    <section className='max-w-7xl px-4 py-10 m-auto'>
+      <div className='flex items-center' data-aos='fade-right' data-aos-duration='800' data-aos-offset='0 '>
         <div>
           <img src={vector} alt='Hover Icon' className='hover-icon' />
         </div>
@@ -18,9 +18,21 @@ const ExpertiesSection = () => {
           <p className='text-2xl pl-2'>Our Experties</p>
         </div>
       </div>
-      <h1 class='font-bold text-2xl sm:text-3xl tablet:text-5xl'>We specialize in Luxury media services</h1>
+      <h1
+        class='font-bold text-2xl sm:text-3xl tablet:text-5xl'
+        data-aos='fade-right'
+        data-aos-duration='800'
+        data-aos-offset='0 '
+      >
+        We specialize in Luxury media services
+      </h1>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-[25px]'>
+      <div
+        className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-[25px]'
+        data-aos='fade-up'
+        data-aos-duration='800'
+        data-aos-offset='600 '
+      >
         {expertiesData?.map((data, index) => (
           <ExpertiesCard
             key={index}

@@ -1,3 +1,4 @@
+import AboutUs from 'src/components/aboutUs'
 import { GuardWrapper } from 'src/layouts/guardWrapper'
 
 // ** Components Imports
@@ -8,6 +9,7 @@ export default function HomePage(props) {
     <GuardWrapper {...props}>
       <h1>Home Page</h1>
       <ExpertiesSection /> 
+      <AboutUs />
     </GuardWrapper>
   )
 }

@@ -29,7 +29,7 @@ const ExpertiesCard = ({ defaultIcon, hoverIcon, heading, description }) => {
 
   return (
     <div
-      className='flex flex-col justify-around p-10 bg-[#e3e3e3] hover:bg-[#181717] hover:text-white text-black cursor-pointer'
+      className='flex flex-col justify-around p-10 overflow-hidden bg-[#e3e3e3] hover:bg-[#181717] transition-all duration-200 hover:text-white text-black cursor-pointer'
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -44,12 +44,12 @@ const ExpertiesCard = ({ defaultIcon, hoverIcon, heading, description }) => {
           <img src={arrow} alt='Hover Icon' className='hover-icon' />
         </div>
       </div>
-      <div className='mt-5' data-aos='fade-right' data-aos-duration='300' data-aos-offset='0 '>
+      <div className='mt-5'>
         <h1 className='text-3xl font-bold' style={headingStyle}>
           {heading}
         </h1>
       </div>
-      <div className='mt-3' data-aos='fade-right' data-aos-duration='300' data-aos-offset='0 '>
+      <div className='mt-3'>
         <p className='text-[18px]' style={descriptionStyle}>
           {description}
         </p>

@@ -1,8 +1,7 @@
 import React from 'react'
-import Marquee from 'src/components/marquee'
+import { Marquee } from 'src/components/marquee'
 import footer from 'src/assets/images/footer.png'
-import 'aos/dist/aos.css'
-import { ArrowIcon, FacebookIcon, InstagramIcon, Twitter, TwitterIcon } from 'src/icons'
+import { ArrowIcon, FacebookIcon, InstagramIcon, TwitterIcon } from 'src/icons'
 
 const Footer = () => {
   return (

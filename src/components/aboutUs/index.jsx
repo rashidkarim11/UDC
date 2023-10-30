@@ -10,14 +10,14 @@ export default function AboutUs() {
         <div className='grid grid-cols-12 gap-10'>
           <div className='col-span-12 tablet:col-span-6'>
             <div className='flex justify-center items-center h-full'>
-              <div data-aos='fade-right' data-aos-duration='300' data-aos-offset='0 '>
+              <div data-aos='fade-right' data-aos-duration='800' data-aos-offset='0 '>
                 <img className='max-h-[600px] max-w-[500px] w-full m-full' src={about} alt='aboutus' />
               </div>
             </div>
           </div>
 
           <div className='col-span-12 tablet:col-span-6'>
-            <div data-aos='fade-left' data-aos-duration='300' data-aos-offset='600' className='flex flex-col pt-20'>
+            <div data-aos='fade-left' data-aos-duration='800' className='flex flex-col pt-20'>
               <div className='flex py-4'>
                 <img src={icon} alt='icon' />
                 <p className='text-sm'>About UDS Studio</p>

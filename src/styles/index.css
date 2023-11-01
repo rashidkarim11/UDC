@@ -22,3 +22,9 @@ body {
 .primary-button:hover {
   @apply bg-red-600 border-transparent;
 }
+.contact-layout {
+  @apply bg-[#242323] rounded-lg;
+}
+.input-layout {
+  @apply bg-[#313131] rounded-lg py-3 px-2;
+}

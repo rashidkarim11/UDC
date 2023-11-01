@@ -1,0 +1,25 @@
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: left;
+}
+.item3 {
+  grid-area: rightTop;
+}
+.item4 {
+  grid-area: rightBottom;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left left rightTop rightTop rightTop rightTop'
+    'left left rightBottom rightBottom rightBottom rightBottom'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+}

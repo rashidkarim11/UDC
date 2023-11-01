@@ -10,12 +10,10 @@ import Footer from 'src/components/footer'
 export default function HomePage(props) {
   return (
     <GuardWrapper {...props}>
-      <Header />
       <Main />
       <ExpertiesSection />
       <AboutUs />
       <ClientsSec />
-      <Footer />
     </GuardWrapper>
   )
 }

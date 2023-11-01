@@ -9,10 +9,8 @@ import Category from 'src/views/client/category'
 export default function OurClient(props) {
   return (
     <GuardWrapper {...props}>
-      <Header />
       <Main />
       <Category />
-      <Footer />
     </GuardWrapper>
   )
 }

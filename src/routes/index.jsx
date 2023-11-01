@@ -8,7 +8,7 @@ import Production from 'src/pages/production'
 
 const HomePage = lazy(() => import('src/pages/home'))
 const PressKitRelease = lazy(() => import('src/pages/pressKitRelease'))
-
+const ContactUs = lazy(() => import('src/pages/contact'))
 export const AppRouter = () => {
   return (
     <RouterProvider
@@ -29,6 +29,7 @@ export const AppRouter = () => {
             <Route element={<HomePage />} path='/' />
             <Route element={<Production />} path='/production' />
             <Route element={<PressKitRelease />} path='/press-kit-release' />
+            <Route element={<ContactUs />} path='/contact-us' />
           </Route>
         )
       )}

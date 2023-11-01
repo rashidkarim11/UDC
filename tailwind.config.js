@@ -15,7 +15,8 @@ module.exports = {
       },
       colors: {
         background: '#fffff',
-        alpha: '#181717'
+        alpha: '#181717',
+        beta: '#B7B7B7'
       },
 
       keyframes: {

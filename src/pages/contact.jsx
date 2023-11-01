@@ -4,7 +4,7 @@ import Contact from 'src/views/conatctUs'
 
 const ContactUs = () => {
   return (
-    <section className='bg-alpha h-[100vh] pt-56'>
+    <section className='bg-alpha pt-56'>
       <Contact />
     </section>
   )

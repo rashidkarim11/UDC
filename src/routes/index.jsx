@@ -1,6 +1,8 @@
 import { lazy } from 'react'
 import { Outlet, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import { ErrorBoundary } from 'src/components/errorBoundary'
+import Footer from 'src/components/footer'
+import { Header } from 'src/components/header'
 import { SuspenseLayout } from 'src/layouts/suspense.layout'
 import Production from 'src/pages/production'
 
@@ -15,9 +17,13 @@ export const AppRouter = () => {
           <Route
             errorElement={<ErrorBoundary />}
             element={
-              <SuspenseLayout>
-                <Outlet />
-              </SuspenseLayout>
+              <div>
+                <Header />
+                <SuspenseLayout>
+                  <Outlet />
+                </SuspenseLayout>
+                <Footer />
+              </div>
             }
           >
             <Route element={<HomePage />} path='/' />

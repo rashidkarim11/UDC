@@ -6,7 +6,7 @@ import { PhoneIcon, PhoneIconInput } from 'src/icons/phone'
 import Input from 'src/views/input'
 const Contact = () => {
   return (
-    <div className=' flex flex-col gap-y-20 justify-evenly tablet:flex-row tablet:w-8/12 m-auto '>
+    <div className=' flex flex-col gap-y-20 justify-evenly tablet:flex-row tablet:w-9/12 m-auto '>
       <section className='flex flex-col  items-center tablet:items-start min-w-max'>
         <h1 className='text-white text-5xl font-bold'>Contact us</h1>
         <p className='text-gray-400 text-center max-w-xs py-5 tablet:text-left'>

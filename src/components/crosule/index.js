@@ -25,7 +25,7 @@ const Crosule = ({ data, setSelectedClient }) => {
   return (
     <Carousel
       arrows={false}
-      customButtonGroup={<ButtonGroup setSelectedClient={setSelectedClient} />}
+      customButtonGroup={<ButtonGroup setSelectedClient={setSelectedClient} data={data} />}
       responsive={responsive}
       containerClass='flex flex-col justify-between ml-4'
       itemClass='min-w-[300px] min-h-[60vh] mx-1  '
@@ -40,18 +40,23 @@ const Crosule = ({ data, setSelectedClient }) => {
 
 export default Crosule
 
-const ButtonGroup = ({ next, previous, goToSlide, setSelectedClient, ...rest }) => {
+const ButtonGroup = ({ next, previous, goToSlide, setSelectedClient, data, ...rest }) => {
   const {
     carouselState: { currentSlide }
   } = rest
-
+  console.log({ ...rest.carouselState }, 'rets')
   return (
     <div class='flex '>
       <div
         class='w-50 h-50 bg-[#EDECEC]'
         onClick={() => {
           previous()
-          setSelectedClient(currentSlide - 1)
+
+          if (currentSlide > data?.length) {
+            setSelectedClient(data.length - 3)
+          } else {
+            setSelectedClient(currentSlide - 1)
+          }
         }}
       >
         <svg width='70' height='70' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -71,7 +76,12 @@ const ButtonGroup = ({ next, previous, goToSlide, setSelectedClient, ...rest }) 
         class='ml-5 w-50 h-50 bg-[#EDECEC]'
         onClick={() => {
           next()
-          setSelectedClient(currentSlide - 1)
+
+          if (currentSlide > data?.length) {
+            setSelectedClient(data.length - 3)
+          } else {
+            setSelectedClient(currentSlide - 1)
+          }
         }}
       >
         <svg width='70' height='70' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>

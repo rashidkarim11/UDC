@@ -103,7 +103,11 @@ const ClientsSec = () => {
             </div>
           </div>
           <div>
-            <img src={data[selectedClient]?.image} alt='man' class='max-h-[60vh] min-h-[60vh] min-w-full' />
+            <img
+              src={data[selectedClient]?.image}
+              alt='man'
+              class='max-h-[70vh] min-h-[70vh] min-w-[100%] max-w-[100%]'
+            />
           </div>
         </div>
         <div class='md:col-span-1 md:mt-0 col-span-3 mt-10 '>

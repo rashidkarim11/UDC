@@ -112,12 +112,13 @@ export default function Production() {
             )
           })}
         </div>
-        <div class='flex space-x-4 space-y-10 justify-center md:justify-between  flex-wrap mt-20'>
+        <div class='flex space-x-4 space-y-10 justify-center items-baseline md:justify-between  flex-wrap mt-20'>
           <img src={image1} alt='Company 1 Logo' class='w-15 aspect-w-3 aspect-h-2 object-contain ' />
-          <img src={image2} alt='Company 2 Logo' class='w-15 aspect-w-3 aspect-h-2 object-contain ' />
-          <img src={image3} alt='Company 3 Logo' class='w-15 aspect-w-3 aspect-h-2 object-contain ' />
           <img src={image4} alt='Company 4 Logo' class='w-15 aspect-w-3 aspect-h-2 object-contain ' />
-          <img src={image7} alt='Company 5 Logo' class='w-15 aspect-w-3 aspect-h-2 object-contain ' />
+          <img src={image3} alt='Company 3 Logo' class='w-15 aspect-w-3 aspect-h-2 object-contain ' />
+
+          <img src={image7} alt='Company 5 Logo' class='w-15 aspect-w-3 aspect-h-2 object-contain  ' />
+          <img src={image2} alt='Company 2 Logo' class='w-15 aspect-w-3 aspect-h-2 object-contain ' />
         </div>
       </section>
 

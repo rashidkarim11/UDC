@@ -1,4 +1,4 @@
-import Crosule from '../crosule'
+import Crosule from '../../../components/crosule'
 
 import image1 from './img1.png'
 import image2 from './img2.png'

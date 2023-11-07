@@ -1,5 +1,5 @@
 // ** react imports
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 // images imports
 import img1 from 'src/assets/images/slide3.png'
@@ -8,90 +8,59 @@ import img3 from 'src/assets/images/slide3.png'
 import img4 from 'src/assets/images/Rectangle 20.png'
 import img5 from 'src/assets/images/slide3.png'
 import img6 from 'src/assets/images/footer.png'
-import arrow from 'src/assets/images/sliderArrow.png'
-import HoverCard from 'src/views/pressKitRelease/hoverCard'
-
-// ** data imports
+import Slider from 'react-slick'
+import { ReactComponent as ArrowRightIcon } from 'src/assets/icons/Frame.svg'
+import HoverCard from './hoverCard'
 import { hoverCardData } from './data'
 
-const initialImages = [img1]
 const allImages = [img1, img2, img3, img4, img5, img6]
 
 const OurPressKitReleaseSlider = () => {
-  const [currentImages, setCurrentImages] = useState(initialImages)
-  const [hoveredImageIndex, setHoveredImageIndex] = useState(null)
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1024) {
-        setCurrentImages(allImages.slice(0, 3))
-      } else {
-        setCurrentImages(initialImages)
+  const settings = {
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
       }
-    }
-
-    window.addEventListener('resize', handleResize)
-    handleResize()
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
-
-  const nextImage = () => {
-    const currentIndex = allImages.indexOf(currentImages[0])
-
-    if (currentIndex >= 0 && currentIndex < allImages.length - 3) {
-      setCurrentImages(allImages.slice(currentIndex + 1, currentIndex + 4))
-    }
+    ]
   }
-
-  const handleMouseEnter = index => {
-    setHoveredImageIndex(index)
-  }
-
-  const handleMouseLeave = () => {
-    setHoveredImageIndex(null)
-  }
-
   return (
-    <div className='slider-container bg-black text-white relative p-6 sm:p-10 md:p-16 lg:p-20 xl:p-24'>
-      <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl'>Our Press Kit Release</h2>
-      <div className='slider flex items-center relative'>
-        {currentImages.map((image, index) => (
-          <div
-            key={index}
-            className='slide'
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={handleMouseLeave}
-            style={{ position: 'relative' }}
-          >
-            <img className='w-full sm:w-[600px] h-[500px]' src={image} alt={`Slide ${index + 1}`} />
-            {hoveredImageIndex !== null && hoveredImageIndex === index && (
-              <div
-                className='hover-card text-black'
-                style={{ position: 'absolute', bottom: '15%', left: 0, zIndex: 1 }}
-              >
+    <div className='bg-[#181717] pr-0 sm:p-[40] sm:pr-0 md:p-[70] md:pr-0 tablet:p-[120px] tablet:pr-0'>
+      <div className='pb-12'>
+        <h1 className='text-4xl text-white'>Our press kit releases</h1>
+      </div>
+      <div>
+        <Slider {...settings} arrows centerMode infinite prevArrow={<></>} nextArrow={<NextButton />}>
+          {allImages.map((image, index) => (
+            <div key={index} className='group w-full sm:w-[600px] h-[500px] px-2 relative'>
+              <img className='w-full h-full object-cover ' src={image} alt={`Slide ${index + 1}`} />
+              <div className='hover-card text-black absolute bottom-4 left-6 opacity-0 group-hover:opacity-100 transition ease-in-out delay-150 '>
                 <HoverCard
-                  heading={hoverCardData[hoveredImageIndex].heading}
-                  date={hoverCardData[hoveredImageIndex].date}
-                  description={hoverCardData[hoveredImageIndex].description}
+                  heading={hoverCardData[index].heading}
+                  date={hoverCardData[index].date}
+                  description={hoverCardData[index].description}
                 />
               </div>
-            )}
-          </div>
-        ))}
-      </div>
-      <div className='absolute top-1/2 right-0 transform -translate-y-1/2'>
-        <img
-          className='w-10 h-10 sm:w-12 sm:h-12 cursor-pointer mb-10 sm:mb-20'
-          src={arrow}
-          alt='arrow'
-          onClick={nextImage}
-        />
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   )
 }
 
 export default OurPressKitReleaseSlider
+
+const NextButton = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className='rounded-full transition ease-in-out delay-150 p-3 bg-[#ffffff33] text-white  border absolute right-20 top-[50%] '
+  >
+    <ArrowRightIcon />
+  </button>
+)

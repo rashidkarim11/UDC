@@ -7,7 +7,12 @@ import arrow from 'src/assets/icons/arrow1.svg'
 const PressKitReleaseSec = () => {
   return (
     <section className='relative w-full'>
-      <div className='text-white p-[15px] sm:p-[40] md:p-[70] tablet:p-[120px] pt-0'>
+      <div
+        className='text-white p-[15px] sm:p-[40] md:p-[70] tablet:p-[120px] pt-0'
+        data-aos='fade-left'
+        data-aos-duration='1200'
+        data-aos-offset='0'
+      >
         <h2 className='text-2xl sm:text-3xl md:text-4xl tablet:text-5xl'>Press Kit Release</h2>
         <p className='text-xs sm:text-xl md:text-2xl tablet:text-3xl text-justify mt-3'>
           Your Story, Crafted into a Captivating Narrative The art of storytelling is at the heart of every successful

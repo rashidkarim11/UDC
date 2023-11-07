@@ -23,7 +23,7 @@ export default function PressKitRelease(props) {
 
   return (
     <GuardWrapper {...props}>
-      <div className='bg-black'>
+      <div className='bg-[#181717]'>
         <Header />
         <Main />
         <div className='w-full p-[15px] sm:p-[40] md:p-[70] tablet:p-[120px]'>

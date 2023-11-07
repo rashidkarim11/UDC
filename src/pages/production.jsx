@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom'
-import { DashIcon, MainSectionIcon } from 'src/icons'
+import { MainSectionIcon } from 'src/icons'
 import { ArrowConatct } from 'src/icons/arrowContact'
 import { MoonIcon } from 'src/icons/moon'
 import image1 from '../assets/images/proImg1.png'
@@ -15,7 +14,7 @@ export default function Production() {
       <section className='min-h-screen h-full bg-[#181717] px-28'>
         <div className='h-full min-h-screen flex flex-col justify-center max-w-7xl m-auto '>
           <div>
-            <div className=' max-w-5xl z-10' data-aos='fade-right' data-aos-duration='800' data-aos-offset='0 '>
+            <div className=' max-w-5xl z-10' data-aos='fade-right' data-aos-duration='800' data-aos-offset='0'>
               <h2 className='relative font-bold text-6xl sm:text-7xl tablet:text-8xl text-white'>
                 <div className='absolute -z-50 -top-20  left-10'>
                   <MoonIcon />

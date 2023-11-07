@@ -6,7 +6,7 @@ import image from 'src/assets/images/socialVideo.png'
 const SocialMediaManagement = () => {
   return (
     <section className='bg-white text-black p-[15px] sm:p-[40] md:p-[70] tablet:p-[120px]'>
-      <div>
+      <div data-aos='fade-right' data-aos-duration='1200' data-aos-offset='0'>
         <p className='text-2xl'>Social Media Management</p>
         <h2 className='  font-bold text-6xl sm:text-7xl tablet:text-8xl  '>
           We Generate <br /> Billions of Views
